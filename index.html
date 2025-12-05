@@ -3,9 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Garuka Gimhana - Backend Developer</title>
+    <title>Garuka Gimhana - Full-Stack Developer</title>
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <style>
+        /* Keeping all original CSS styles exactly as they were */
         * {
             margin: 0;
             padding: 0;
@@ -458,12 +459,13 @@
         }
 
         .hero-content h1 {
-            font-size: 60px;
+            font-size: 48px;
             margin-bottom: 20px;
             background: linear-gradient(135deg, var(--primary), var(--secondary));
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
             animation: slideIn 1s ease-out;
+            line-height: 1.2;
         }
 
         .hero-content p {
@@ -732,6 +734,9 @@
             transition: all 0.3s ease;
             position: relative;
             overflow: hidden;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
         }
 
         .project-card::before {
@@ -775,6 +780,7 @@
             align-items: center;
             gap: 5px;
             transition: gap 0.3s ease;
+            margin-top: auto;
         }
 
         .project-link:hover {
@@ -838,6 +844,7 @@
         .timeline-content p {
             color: rgba(232, 234, 246, 0.8);
             line-height: 1.6;
+            margin-bottom: 5px;
         }
 
         @keyframes fadeInUp {
@@ -967,7 +974,7 @@
             header { padding: 15px 5%; }
             nav a { margin-left: 20px; font-size: 14px; }
             .hero, section { padding: 80px 5%; }
-            .hero-content h1 { font-size: 36px; }
+            .hero-content h1 { font-size: 32px; }
             .btn-group { flex-direction: column; }
             .image-container {
                 width: 250px;
@@ -980,7 +987,6 @@
     </style>
 </head>
 <body>
-    <!-- Custom Cursor -->
     <div class="cursor"></div>
     <div class="cursor-follower"></div>
 
@@ -1012,20 +1018,20 @@
             <a href="#about">About</a>
             <a href="#skills">Skills</a>
             <a href="#projects">Projects</a>
-            <a href="#education">Education</a>
             <a href="#experience">Experience</a>
+            <a href="#education">Education</a>
+            <a href="#certifications">Certifications</a>
             <a href="#contact">Contact</a>
         </nav>
     </header>
 
     <section id="home" class="hero">
-        <!-- Particles.js Container - Only for Home Page -->
         <div id="particles-js"></div>
         
         <div class="hero-content">
             <h3>Hello, I'm</h3>
             <h1>Garuka Gimhana</h1>
-            <p>A passionate Backend Developer specializing in building efficient, scalable, and robust systems. With expertise in Java, C#, and database management, I create seamless backend solutions that power innovative applications.</p>
+            <p>A passionate Full-Stack Developer and IoT Enthusiast. Specializing in backend systems, microservices architecture, and cloud solutions, I build scalable applications using Java, C#, and modern web technologies.</p>
             <div class="btn-group">
                 <a href="#contact" class="btn"><span>Hire Me</span></a>
                 <a href="#contact" class="btn btn-outline"><span>Let's Talk</span></a>
@@ -1062,10 +1068,10 @@
                 <img src="my.jpg" alt="Garuka Gimhana">
             </div>
             <div class="about-text">
-                <h3>Backend Developer</h3>
-                <p>I'm a dedicated Backend Developer with a strong foundation in creating efficient and scalable systems. My expertise lies in Java, C#, and comprehensive database management, where I excel at solving complex problems and building robust backend architectures.</p>
-                <p>With a passion for clean, maintainable code, I focus on delivering seamless backend solutions that enhance user experiences. My approach combines technical excellence with innovative thinking to create systems that not only work but excel.</p>
-                <p>Beyond coding, I bring valuable experience from my NVQ Level 3 and Level 4 certifications in Solar Systems, showcasing my diverse technical skillset and problem-solving abilities across different domains.</p>
+                <h3>Full-Stack Developer</h3>
+                <p>I am a Software Engineering undergraduate at the University of Sri Jayewardenepura with a strong focus on clean architecture, RESTful APIs, and secure authentication. I specialize in building scalable web applications using Angular, Spring Boot, and .NET.</p>
+                <p>My expertise extends to IoT hardware integration, bridging the gap between physical devices like ESP32 and real-time communication systems. I am also a Microsoft Certified Azure Fundamentals professional.</p>
+                <p>With a commitment to continuous learning and teamwork, I aim to deliver innovative solutions that solve real-world problems through robust backend architectures and responsive frontend designs.</p>
                 <a href="#contact" class="btn"><span>Get In Touch</span></a>
             </div>
         </div>
@@ -1076,39 +1082,39 @@
         <p class="section-subtitle">Technologies and tools I work with</p>
         <div class="skills-grid">
             <div class="skill-card">
-                <h3><i class='bx bx-code-alt'></i> Programming Languages</h3>
+                <h3><i class='bx bx-code-alt'></i> Languages & Frontend</h3>
                 <ul>
-                    <li>Java</li>
-                    <li>C#</li>
-                    <li>Python</li>
-                    <li>JavaScript</li>
+                    <li>Java, C#, Python</li>
+                    <li>TypeScript, JavaScript</li>
+                    <li>Angular, React</li>
+                    <li>SQL</li>
                 </ul>
             </div>
             <div class="skill-card">
-                <h3><i class='bx bx-data'></i> Database Management</h3>
-                <ul>
-                    <li>SQL Server</li>
-                    <li>MySQL</li>
-                    <li>PostgreSQL</li>
-                    <li>MongoDB</li>
-                </ul>
-            </div>
-            <div class="skill-card">
-                <h3><i class='bx bx-wrench'></i> Frameworks & Tools</h3>
+                <h3><i class='bx bx-server'></i> Backend Development</h3>
                 <ul>
                     <li>Spring Boot</li>
                     <li>.NET Framework</li>
-                    <li>Angular</li>
-                    <li>Git & GitHub</li>
+                    <li>REST APIs</li>
+                    <li>JDBC</li>
                 </ul>
             </div>
             <div class="skill-card">
-                <h3><i class='bx bx-chip'></i> Other Skills</h3>
+                <h3><i class='bx bx-cloud'></i> Cloud & DevOps</h3>
                 <ul>
-                    <li>RESTful API Development</li>
-                    <li>Version Control</li>
-                    <li>IoT Integration</li>
-                    <li>Problem Solving</li>
+                    <li>AWS, Azure</li>
+                    <li>Docker</li>
+                    <li>CI/CD</li>
+                    <li>Git & Ubuntu</li>
+                </ul>
+            </div>
+            <div class="skill-card">
+                <h3><i class='bx bx-lock-alt'></i> Security & Tools</h3>
+                <ul>
+                    <li>Spring Security</li>
+                    <li>JWT, OAuth2</li>
+                    <li>PostgreSQL, MySQL</li>
+                    <li>IntelliJ IDEA, VS Code</li>
                 </ul>
             </div>
         </div>
@@ -1119,19 +1125,39 @@
         <p class="section-subtitle">Showcasing my work and achievements</p>
         <div class="projects-grid">
             <div class="project-card">
-                <h3>Student Management System</h3>
-                <p>A comprehensive Windows Forms application built with C# for managing student records, attendance tracking, and grade management with seamless SQL Server integration.</p>
-                <a href="#" class="project-link">View Details <i class='bx bx-right-arrow-alt'></i></a>
+                <h3>OpenMic Chat Platform</h3>
+                <p>Real-time chat application built with Angular and Spring Boot. [cite_start]Features private/group messaging via WebSockets and secure JWT authentication[cite: 52].</p>
+                <a href="https://github.com/Garuka404" target="_blank" class="project-link">View Code <i class='bx bx-right-arrow-alt'></i></a>
             </div>
             <div class="project-card">
-                <h3>IoT Heart Rate Monitor</h3>
-                <p>Developed an innovative IoT-based heart attack detection system using ESP32 and pulse rate sensors with real-time Wi-Fi connectivity for health monitoring.</p>
-                <a href="#" class="project-link">View Details <i class='bx bx-right-arrow-alt'></i></a>
+                <h3>Smart Home Control System</h3>
+                <p>A full-stack IoT home automation solution connecting a Flutter mobile app with a Spring Boot backend. [cite_start]Features real-time control of lights and sensors via WebSocket and Arduino integration[cite: 47, 48, 51].</p>
+                <a href="https://github.com/Garuka404" target="_blank" class="project-link">View Code <i class='bx bx-right-arrow-alt'></i></a>
             </div>
             <div class="project-card">
-                <h3>Smart Classroom</h3>
-                <p>Implemented an AI-powered solution featuring face detection, RFID-based attendance tracking, and magnetic lock control for enhanced classroom security and automation.</p>
-                <a href="#" class="project-link">View Details <i class='bx bx-right-arrow-alt'></i></a>
+                <h3>University Management System</h3>
+                <p>A scalable microservices architecture built with Spring Boot and FastAPI. [cite_start]Includes separate services for student management and attendance tracking with face recognition capabilities[cite: 52].</p>
+                <a href="https://github.com/Garuka404" target="_blank" class="project-link">View Code <i class='bx bx-right-arrow-alt'></i></a>
+            </div>
+            <div class="project-card">
+                <h3>CineBook System</h3>
+                <p>A multi-branch cinema booking platform featuring secure payment integration. [cite_start]Implemented robust authentication using Spring Security, OAuth2, Keycloak, and OpenID Connect[cite: 52].</p>
+                <a href="https://github.com/Garuka404" target="_blank" class="project-link">View Code <i class='bx bx-right-arrow-alt'></i></a>
+            </div>
+        </div>
+    </section>
+
+    <section id="experience">
+        <h2 class="section-title">Experience</h2>
+        <p class="section-subtitle">Professional journey</p>
+        <div class="timeline">
+            <div class="timeline-item">
+                <div class="timeline-content">
+                    <h3>Solar Technician</h3>
+                    <p class="date">2021 - 2023</p>
+                    <p><strong>Self-Employed</strong></p>
+                    <p>Leveraged NVQ Level 3 and Level 4 certifications to install, maintain, and troubleshoot solar energy systems, building a reputation for quality service and innovative solutions.</p>
+                </div>
             </div>
         </div>
     </section>
@@ -1142,10 +1168,10 @@
         <div class="timeline">
             <div class="timeline-item">
                 <div class="timeline-content">
-                    <h3>Bachelor of ICT</h3>
-                    <p class="date">2020 - 2024</p>
-                    <p><strong>University of Sri Jayawandanapura</strong></p>
-                    <p>Focused on software development, backend systems, and database management with hands-on project experience.</p>
+                    <h3>BICT (Hons) in ICT</h3>
+                    <p class="date">2022 - Present</p>
+                    <p><strong>University of Sri Jayewardenepura</strong></p>
+                    [cite_start]<p>Specializing in software engineering, full-stack development, backend systems, and IoT solutions[cite: 9, 15].</p>
                 </div>
             </div>
             <div class="timeline-item">
@@ -1153,7 +1179,7 @@
                     <h3>Advanced Level (A/L)</h3>
                     <p class="date">2018 - 2020</p>
                     <p><strong>H/ Beliatta International School</strong></p>
-                    <p>Specialized in Mathematics and Information Technology with distinction-level performance.</p>
+                    <p>Specialized in Mathematics and Information Technology.</p>
                 </div>
             </div>
             <div class="timeline-item">
@@ -1167,32 +1193,24 @@
         </div>
     </section>
 
-    <section id="experience">
-        <h2 class="section-title">Experience</h2>
-        <p class="section-subtitle">Professional journey and achievements</p>
+    <section id="certifications">
+        <h2 class="section-title">Certifications</h2>
+        <p class="section-subtitle">Professional credentials and licenses</p>
         <div class="timeline">
             <div class="timeline-item">
                 <div class="timeline-content">
-                    <h3>Backend Developer Intern</h3>
-                    <p class="date">2023 - Present</p>
-                    <p><strong>JAVA Tech Solutions</strong></p>
-                    <p>Creating and optimizing backend systems for web applications, implementing REST APIs, enhancing database performance, and collaborating with frontend teams.</p>
+                    <h3>Microsoft Certified: Azure Fundamentals</h3>
+                    <p class="date">Jun 2025 - Jun 2027</p>
+                    <p><strong>Microsoft</strong></p>
+                    [cite_start]<p>Validates understanding of core cloud concepts, Azure services, solutions, and management tools[cite: 23, 27].</p>
                 </div>
             </div>
             <div class="timeline-item">
                 <div class="timeline-content">
-                    <h3>Freelance Solar Technician</h3>
-                    <p class="date">2021 - 2023</p>
-                    <p><strong>Self-Employed</strong></p>
-                    <p>Leveraged NVQ Level 3 and Level 4 certifications to install, maintain, and troubleshoot solar energy systems, building a reputation for quality service and innovative solutions.</p>
-                </div>
-            </div>
-            <div class="timeline-item">
-                <div class="timeline-content">
-                    <h3>Junior IT Support Technician</h3>
-                    <p class="date">2020 - 2021</p>
-                    <p><strong>ICTS Corporation</strong></p>
-                    <p>Provided technical support for software and hardware issues, performed system updates, and assisted in deploying new software solutions.</p>
+                    <h3>Spring Security Zero to Master</h3>
+                    <p class="date">Nov 2025</p>
+                    <p><strong>Udemy</strong></p>
+                    [cite_start]<p>Covering core security concepts including Authentication, Authorization, JWT, OAuth2, and OpenID Connect[cite: 18, 22].</p>
                 </div>
             </div>
         </div>
@@ -1206,7 +1224,7 @@
                 <div class="contact-item">
                     <i class='bx bxs-phone'></i>
                     <h3>Phone</h3>
-                    <p>0710644491</p>
+                    <p>+94 71 064 4491</p>
                 </div>
                 <div class="contact-item">
                     <i class='bx bxs-envelope'></i>
@@ -1216,7 +1234,7 @@
                 <div class="contact-item">
                     <i class='bx bxl-linkedin-square'></i>
                     <h3>LinkedIn</h3>
-                    <a href="https://www.linkedin.com/in/garuka-gimhana-b689442a5/">linkedin.com/in/garuka</a>
+                    <a href="https://www.linkedin.com/in/garuka-gimhana-b689442a5/">Connect on LinkedIn</a>
                 </div>
                 <div class="contact-item">
                     <i class='bx bxl-github'></i>
@@ -1243,7 +1261,7 @@
     </section>
 
     <footer>
-        <p>&copy; 2024 Garuka Gimhana. All rights reserved. Designed with passion.</p>
+        <p>&copy; 2025 Garuka Gimhana. All rights reserved. Designed with passion.</p>
     </footer>
 
     <script>
@@ -1371,7 +1389,6 @@
         if (particlesContainer) {
             particlesContainer.appendChild(particlesCanvas);
             new ParticleNetwork(particlesCanvas);
-            console.log('✅ Particle network initialized!');
         }
 
         // Custom Cursor
@@ -1524,7 +1541,6 @@
             
             sections.forEach(section => {
                 const sectionTop = section.offsetTop;
-                const sectionHeight = section.clientHeight;
                 if (scrollY >= (sectionTop - 200)) {
                     current = section.getAttribute('id');
                 }
@@ -1568,4 +1584,6 @@
             el.style.transition = 'all 0.6s ease';
             observer.observe(el);
         });
-            
+    </script>
+</body>
+</html>
